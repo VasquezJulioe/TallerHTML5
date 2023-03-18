@@ -1,9 +1,170 @@
+header {
+    text-shadow: 2px 4px 6px #1162ac;
+}
+
+header a {
+    border: 4px inset white;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: white;
+}
+
+hr {
+    border-width: 4px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 50%;
+    width: 70%;
+}
 
 body {
-    background-color: lightblue;
+    width: 1024px;
+    margin: 0px auto;
+    background-color: rgba(100, 148, 237, 0.5);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    padding: 2px 2px 2px 2px;
+}
+
+img {
+    border: 10px solid blue;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 35px white;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
     color: darkblue;
 }
+
 p {
     color: black;
 }
 
+nav {
+    background-image: linear-gradient(150deg, #2f00ff, #09f, #0b4750);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: .3s;
+    font-size: .9rem;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+}
+
+#IP {
+    background-color: darkslateblue;
+    font-weight: semibold;
+    color: white;
+    font-size: 0.9rem;
+    padding: .7rem .7rem;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: .2rem .2rem 1rem darkmagenta, -.2rem -.2rem 1rem darkorchid;
+}
+
+#IP:hover {
+    box-shadow: .5rem .5rem 1rem darkorchid, -.5rem -.5rem 1rem darkmagenta;
+}
+
+#IP:active {
+    box-shadow: inset .2rem .2rem 1rem darkorchid, inset -.2rem -.2rem 1rem darkmagenta;
+}
+
+#EL {
+    background-color: lightgreen;
+    font-weight: semibold;
+    color: black;
+    font-size: 0.9rem;
+    padding: .7rem .7rem;
+    border: 1px solid #2f0606;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: .2rem .2rem 1rem darkolivegreen, -.2rem -.2rem 1rem darkgreen;
+}
+
+#EL:hover {
+    box-shadow: .5rem .5rem 1rem darkgreen, -.5rem -.5rem 1rem darkolivegreen;
+}
+
+#EL:active {
+    box-shadow: inset .2rem .2rem 1rem darkgreen, inset -.2rem -.2rem 1rem darkolivegreen;
+}
+
+#RP {
+    background-color: white;
+    font-weight: semibold;
+    color: #444;
+    font-size: 0.9rem;
+    padding: .7rem .7rem;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: .5rem .5rem 1rem #ccc, -.5rem -.5rem 1rem #fff;
+}
+
+#RP:hover {
+    box-shadow: .5rem .5rem 1rem #fff, -.5rem -.5rem 1rem #ccc;
+}
+
+#RP:active {
+    box-shadow: inset .2rem .2rem 1rem darkgoldenrod, inset -.2rem -.2rem 1rem darkcyan;
+}
+
+#RF {
+    background-color: lightseagreen;
+    font-weight: semibold;
+    color: black;
+    font-size: 0.9rem;
+    padding: .7rem .7rem;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: .5rem .5rem 1rem darkblue, -.5rem -.5rem 1rem blue;
+}
+
+#RF:hover {
+    box-shadow: .5rem .5rem 1rem blue, -.5rem -.5rem 1rem darkblue;
+}
+
+#RF:active {
+    box-shadow: inset .2rem .2rem 1rem blue, inset -.2rem -.2rem 1rem darkblue;
+}
+
+#ER {
+    background-color: black;
+    font-weight: semibold;
+    color: white;
+    font-size: 0.9rem;
+    padding: .7rem .7rem;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: .5rem .5rem 1rem darkslategrey, -.5rem -.5rem 1rem darkslateblue;
+}
+
+#ER:hover {
+    box-shadow: .5rem .5rem 1rem darkslateblue, -.5rem -.5rem 1rem darkslategrey;
+}
+
+#ER:active {
+    box-shadow: inset .2rem .2rem 1rem darkslateblue, inset -.2rem -.2rem 1rem darkslategrey;
+}
