@@ -5,12 +5,19 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Aqui se encuentra mi hoja de vida detallada">
-	<link rel="stylesheet" href="estilos.css" type="text/css" />
-	<title>Mi Hoja de vida</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	
+	<title>Mi hoja de vida</title>
 </head>
 
-<body>
-	<header>Hoja de vida de Julio Vasquez <a href="HojaVida.zip">Descargar hoja de vida</a></header>
+<body id="bdy" class="estilo1">
+	<header>
+		Hoja de vida de Julio Vasquez <a href="Foto/HojaVida.zip">Descargar hoja de vida</a>
+		<br>
+		<button type="button" onclick="ejecutar('1')">Estilo Azul</button>
+		<button type="button" onclick="ejecutar('2')">Estilo Rojo</button>
+		<button type="button" onclick="ejecutar('3')">Estilo Morado</button>
+	</header>
 	<br>
 	<nav>
 		<a id="IP" href="index.html"> Información principal </a>
@@ -22,45 +29,57 @@
 	<hr>
 
 	<main>
-		<section>
-			<h1 id="rfamiliares">Referencias familiares </h1>
-			<h2>Primera Referencia</h2>
-			<h3>Julio Vasquez</h3>
-			<li> Profesión: Transportador </a></li>
-			<li> Telefono: 316 316 40 82 </li>
-			<li> Ciudad: Valledupar - Cesar </li>
-			<br>
-		</section>
-		<section>
-			<h2>Segunda Referencia</h2>
-			<h3>Antonia Vasquez</h3>
-			<li> Profesión: Contadora </a></li>
-			<li> Telefono: 301 792 49 10 </li>
-			<li> Ciudad: Valledupar - Cesar </li>
-			<br>
-		</section>
-		<section>
-			<h2>Tecera Referencia</h2>
-			<h3>Aurora Rojas</h3>
-			<li> Profesión: Profesora de Jardin </a></li>
-			<li> Telefono: 305 347 35 53 </li>
-			<li> Ciudad: Valledupar - Cesar </li>
-			<br>
-		</section>
-
-		<article>
-			<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
-		</article>
-		</section>
+		<h1 id="rfamiliares">Referencias familiares </h1>
+		<div class="container">
+			<div class="label">
+				<h2>Primera Referencia</h2>
+			</div>
+				<div class="content">
+				<h3>Julio Vasquez</h3>
+				Profesión: Transportador<br>
+				Telefono: 316 316 40 82<br>
+				Ciudad: Valledupar - Cesar<br>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="label">
+				<h2>Segunda Referencia</h2>
+			</div>
+				<div class="content">
+				<h3>Antonia Vasquez</h3>
+				Profesión: Contadora<br>
+				Telefono: 301 792 49 10<br>
+				Ciudad: Valledupar - Cesar<br>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="label">
+				<h2>Tecera Referencia</h2>
+			</div>
+			<div class="content">
+				<h3>Aurora Rojas</h3>
+				Profesión: Profesora de Jardin<br>
+				Telefono: 305 347 35 53<br>
+				Ciudad: Valledupar - Cesar<br>
+			</div>
+		</div>
+		<br>
 	</main>
-	<br><br>
+	<article>
+		<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
+	</article>
 
+	<br>
+	<hr>
 	<footer>
 		Julio Elias Vasquez Rojas© <br>
 		Ingeniero Electrónico<br>
 		Universidad Popular del Cesar<br>
 		2023
 	</footer>
+	<script src="js/funciones.js" type="text/javascript"></script>
 </body>
 
 </html>

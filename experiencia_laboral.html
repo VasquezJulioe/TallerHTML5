@@ -5,12 +5,19 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Aqui se encuentra mi hoja de vida detallada">
-	<link rel="stylesheet" href="estilos.css" type="text/css" />
-	<title>Mi Hoja de vida</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css" />
+	
+	<title>Mi hoja de vida</title>
 </head>
 
-<body>
-	<header>Hoja de vida de Julio Vasquez <a href="HojaVida.zip">Descargar hoja de vida</a></header>
+<body id="bdy" class="estilo1">
+	<header>
+		Hoja de vida de Julio Vasquez <a href="Foto/HojaVida.zip">Descargar hoja de vida</a>
+		<br>
+		<button type="button" onclick="ejecutar('1')">Estilo Azul</button>
+		<button type="button" onclick="ejecutar('2')">Estilo Rojo</button>
+		<button type="button" onclick="ejecutar('3')">Estilo Morado</button>
+	</header>
 	<br>
 	<nav>
 		<a id="IP" href="index.html"> Información principal </a>
@@ -22,55 +29,72 @@
 	<hr>
 
 	<main>
-		<section>
-			<h1 id="elaboral">Experiencia Laboral </h1>
-			<h2> Diseñador de aplicaciones, Independiente </h2>
-			<h3>FEB 2020 - ENE 2022</h3>
-			<li> Mantenimiento y administración de aplicaciones </a></li>
-			<li> Actualización constante para mejorar desempeño </li>
-			<li> Monitoreo de funcionamiento </li>
-			<li> Seguimiento de las nuevas tendencias en programación. </li>
-			<br>
-		</section>
-		<section>
-			<h2> Diseñador de interfaces, Independiente </h2>
-			<h3>JUN 2019 - ENE 2020</h3>
-			<li> Mantenimiento y administración de interfaces </a></li>
-			<li> Actualización constante para mejorar interacción </li>
-			<li> Mantenimiento y actualización de interactividad </li>
-			<li> Seguimiento de las nuevas tendencias en programación. </li>
-			<br>
-		</section>
-		<section>
-			<h2> Programación de Microcontroladores, Independiente</h2>
-			<h3>JUNIO DE 2018 A JUNIO DE 2019</h3>
-			<li> Desarrollo de código base para la implementación de circuitos cerrados en automatización</a></li>
-			<li> Diseño del control operativo </li>
-			<li> Elaboración de procesos automáticos </li>
-			<br>
-		</section>
-		<section>
-			<h2> Programación de Microcontroladores, Independiente</h2>
-			<h3>JUNIO DE 2017 A JUNIO DE 2018</h3>
-			<li> Implementación de código C para circuitos electrónicos en automatización</a></li>
-			<li> Diseño del sistema control </li>
-			<li> Creación de procesos automátizados </li>
-			<br>
-		</section>
-
-		<article>
-			<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
-		</article>
-		</section>
+		<h1 id="elaboral">Experiencia Laboral </h1>
+		<div class="container">
+			<div class="label">
+				<h2> Diseñador de aplicaciones, Independiente </h2>
+			</div>
+			<div class="content">
+				<h3>FEB 2020 - ENE 2022</h3>
+				Mantenimiento y administración de aplicaciones <br>
+				Actualización constante para mejorar desempeño <br>
+				Monitoreo de funcionamiento <br>
+				Seguimiento de las nuevas tendencias en programación. <br>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="label">
+				<h2> Diseñador de interfaces, Independiente </h2>
+			</div>
+			<div class="content">
+				<h3>JUN 2019 - ENE 2020</h3>
+				Mantenimiento y administración de interfaces <br>
+				Actualización constante para mejorar interacción <br>
+				Mantenimiento y actualización de interactividad <br>
+				Seguimiento de las nuevas tendencias en programación. <br>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="label">
+				<h2> Programación de Microcontroladores, Independiente</h2>
+			</div>
+			<div class="content">
+				<h3>JUNIO DE 2018 A JUNIO DE 2019</h3>
+				Desarrollo de código base para la implementación de circuitos cerrados en automatización<br>
+				Diseño del control operativo <br>
+				Elaboración de procesos automáticos <br>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="label">
+				<h2> Programación de Microcontroladores, Independiente</h2>
+			</div>
+			<div class="content">
+				<h3>JUNIO DE 2017 A JUNIO DE 2018</h3>
+				Implementación de código C para circuitos electrónicos en automatización<br>
+				Diseño del sistema control <br>
+				Creación de procesos automátizados <br>
+			</div>
+		</div>
+		<br>
 	</main>
-	<br>
 
+	<article>
+		<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
+	</article>
+
+	<br>
+	<hr>
 	<footer>
 		Julio Elias Vasquez Rojas© <br>
 		Ingeniero Electrónico<br>
 		Universidad Popular del Cesar<br>
 		2023
 	</footer>
+	<script src="js/funciones.js" type="text/javascript"></script>
 </body>
 
 </html>

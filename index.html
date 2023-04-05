@@ -1,30 +1,37 @@
 <!doctype html>
-<html>
+<html lang="es">
 
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Aqui se encuentra mi hoja de vida detallada">
-	<link rel="stylesheet" href="estilos.css" type="text/css" />
-	<title>Mi Hoja de vida</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	
+	<title>Mi hoja de vida</title>
 </head>
 
-<body>
-	<header>Hoja de vida de Julio Vasquez <a href="HojaVida.zip">Descargar hoja de vida</a></header>
+<body id="bdy" class="estilo1">
+	<header>
+		Hoja de vida de Julio Vasquez <a href="Foto/HojaVida.zip">Descargar hoja de vida</a>
+		<br>
+		<button type="button" onclick="ejecutar('1')">Estilo Azul</button>
+		<button type="button" onclick="ejecutar('2')">Estilo Rojo</button>
+		<button type="button" onclick="ejecutar('3')">Estilo Morado</button>
+	</header>
 	<br>
 	<nav>
-		<a id="IP" href="#iprincipal"> Información principal </a>
-		<a id="EL" href="experiencia_laboral.html"> Experiencia laboral </a>
-		<a id="RP" href="refencias_personales.html"> Referencias personales </a>
-		<a id="RF" href="refencias_familiares.html"> Referencias familiares </a>
-		<a id="ER" href="estudios_realizados.html"> Estudios realizados </a>
+		<a id="IP" class="estilo1" href="#iprincipal"> Información principal </a>
+		<a id="EL" class="estilo1" href="experiencia_laboral.html"> Experiencia laboral </a>
+		<a id="RP" class="estilo1" href="refencias_personales.html"> Referencias personales </a>
+		<a id="RF" class="estilo1" href="refencias_familiares.html"> Referencias familiares </a>
+		<a id="ER" class="estilo1" href="estudios_realizados.html"> Estudios realizados </a>
 	</nav>
 	<hr>
 
 	<main>
+		<h1 id="iprincipal">Información Principal </h1>
 		<section>
-			<h1 id="iprincipal">Información Principal </h1>
-			<img src="Foto/foto.jpg">
+			<img src="Foto/foto.jpg" class="estilo1" id="imagen">
 			<h2>Información Personal</h2>
 			<p>
 				Nombre: Julio Elias Vasquez Rojas<br>
@@ -38,26 +45,26 @@
 
 		<h2>Perfil Profesional</h2>
 		<p>Ingeniero Electrónico con experiencia en campos de la programación y diseño de apps
-			en la plataforma Basic for Android (B4A) y programación en los lenguajes Java, Phyton, C, C++,
+			en la plataforma Basic for Android (B4A) y programación en los lenguajes Java, Python, C, C++,
 			HTML5, y CSS3 con énfasis en el campo de la automatización electrónica.<br><br>
 			Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente en este
 			mundo en que se encuentra en constante movimiento y evolución.
 		</p>
-		<br>
-		<article>
-			<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
-		</article>
-		</section>
 	</main>
+
+	<article>
+		<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
+	</article>
+
 	<br>
 	<hr>
-	
 	<footer>
 		Julio Elias Vasquez Rojas© <br>
 		Ingeniero Electrónico<br>
 		Universidad Popular del Cesar<br>
 		2023
 	</footer>
+	<script src="js/funciones.js" type="text/javascript"></script>
 </body>
 
 </html>

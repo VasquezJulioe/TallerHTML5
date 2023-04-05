@@ -15,18 +15,9 @@ a:hover {
     color: white;
 }
 
-hr {
-    border-width: 4px;
-    border-style: solid;
-    border-color: blue;
-    border-radius: 50%;
-    width: 70%;
-}
-
 body {
     width: 1024px;
     margin: 0px auto;
-    background-color: rgba(100, 148, 237, 0.5);
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
@@ -36,27 +27,9 @@ body {
     padding: 2px 2px 2px 2px;
 }
 
-img {
-    border: 10px solid blue;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 35px white;
-}
-
-h1 {
-    color: blue;
-}
-
-h2 {
-    color: darkblue;
-}
-
-p {
-    color: black;
-}
-
 nav {
     background-image: linear-gradient(150deg, #2f00ff, #09f, #0b4750);
-    padding: 8px 12px;
+    padding: 12px 12px;
     border-radius: 6px;
     transition: .3s;
     font-size: .9rem;
@@ -64,6 +37,172 @@ nav {
     word-spacing: 1px;
 }
 
+img {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 35px white;
+}
+
+main {
+    width: 800px;
+    margin: 90px auto;
+    background-color: white;
+    padding: 45px 45px;
+}
+
+main .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+
+main .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+
+main .label::before {
+    content: '+';
+    color: brown;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+
+main .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+
+main .container.active .content {
+    height: 210px;
+}
+
+/* Cambia de signo positivo a negativo una vez activado */
+
+main .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+/* colores para los estilos */
+.estilo1 hr {
+    border-width: 4px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 50%;
+    width: 70%;
+}
+
+.estilo2 hr {
+    border-width: 4px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 50%;
+    width: 70%;
+}
+
+.estilo3 hr {
+    border-width: 4px;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 50%;
+    width: 70%;
+}
+
+img.estilo1 {
+    border: 10px solid blue;
+}
+
+img.estilo2 {
+    border: 10px solid red;
+}
+
+img.estilo3 {
+    border: 10px solid purple;
+}
+
+.estilo1 {
+    background-color: rgba(100, 148, 237, 0.5);
+}
+
+.estilo2 {
+    background-color: rgba(237, 100, 100, 0.5);
+}
+
+.estilo3 {
+    background-color: rgba(196, 100, 237, 0.5);
+}
+
+
+.estilo1 p {
+    color: darkblue;
+}
+
+.estilo2 p {
+    color: darkred;
+}
+
+.estilo3 p {
+    color: darkmagenta;
+}
+
+.estilo1 h1 {
+    color: rgb(36, 22, 87);
+}
+
+.estilo2 h1 {
+    color: rgb(73, 20, 20);
+}
+
+.estilo3 h1 {
+    color: rgb(72, 25, 76);
+}
+
+.estilo1 h2 {
+    color: darkblue;
+}
+
+.estilo2 h2 {
+    color: darkred;
+}
+
+.estilo3 h2 {
+    color: rgb(100, 0, 100);
+}
+
+
+
+
+
+
+
+
+
+/* Personalizacion de los botones de navegacion */
 #IP {
     background-color: darkslateblue;
     font-weight: semibold;
@@ -116,11 +255,11 @@ nav {
     border-radius: .5rem;
     cursor: pointer;
     transition: all .5s ease;
-    box-shadow: .5rem .5rem 1rem #ccc, -.5rem -.5rem 1rem #fff;
+    box-shadow: .2rem .2rem 1rem #ccc, -.2rem -.2rem 1rem #fff;
 }
 
 #RP:hover {
-    box-shadow: .5rem .5rem 1rem #fff, -.5rem -.5rem 1rem #ccc;
+    box-shadow: .2rem .2rem 1rem #fff, -.2rem -.2rem 1rem #ccc;
 }
 
 #RP:active {

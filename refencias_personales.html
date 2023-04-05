@@ -5,12 +5,19 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Aqui se encuentra mi hoja de vida detallada">
-	<link rel="stylesheet" href="estilos.css" type="text/css" />
-	<title>Mi Hoja de vida</title>
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<title>Mi hoja de vida</title>
 </head>
 
-<body>
-	<header>Hoja de vida de Julio Vasquez <a href="HojaVida.zip">Descargar hoja de vida</a></header>
+<body id="bdy" class="estilo1">
+	<header>
+		Hoja de vida de Julio Vasquez <a href="Foto/HojaVida.zip">Descargar hoja de vida</a>
+		<br>
+		<button type="button" onclick="ejecutar('1')">Estilo Azul</button>
+		<button type="button" onclick="ejecutar('2')">Estilo Rojo</button>
+		<button type="button" onclick="ejecutar('3')">Estilo Morado</button>
+	</header>
 	<br>
 	<nav>
 		<a id="IP" href="index.html"> Información principal </a>
@@ -22,46 +29,58 @@
 	<hr>
 
 	<main>
-		<section>
-			<h1 id="rpersonales">Referencias personales </h1>
-			<h2>Primera Referencia</h2>
-			<h3>Yelenis Navarro</h3>
-			<li> Profesión: Abogada </a></li>
-			<li> Telefono: 316 5 16 12 48 </li>
-			<li> Ciudad: Valledupar - Cesar </li>
-
-			<br>
-		</section>
-		<section>
-			<h2>Segunda Referencia</h2>
-			<h3>Adriana Margarita</h3>
-			<li> Profesión: Medico anestesiólogo </a></li>
-			<li> Telefono: 315 927 46 63 </li>
-			<li> Ciudad: Bucaramanga - Santander </li>
-			<br>
-		</section>
-		<section>
-			<h2>Tecera Referencia</h2>
-			<h3>Jose Mora</h3>
-			<li> Profesión: Ingeniero Electrónico </a></li>
-			<li> Telefono: 323 520 22 04 </li>
-			<li> Ciudad: Agustin Codazzi - Cesar </li>
-			<br>
-		</section>
-
-		<article>
-			<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
-		</article>
-		</section>
+		<h1 id="rpersonales">Referencias personales </h1>
+		<div class="container">
+			<div class="label">
+				<h2>Primera Referencia</h2>
+			</div>
+				<div class="content">
+				<h3>Yelenis Navarro</h3>
+				Profesión: Abogada <br>
+				Telefono: 316 5 16 12 48 <br>
+				Ciudad: Valledupar - Cesar <br>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="label">
+				<h2>Segunda Referencia</h2>
+			</div>
+				<div class="content">
+				<h3>Adriana Margarita</h3>
+				Profesión: Medico anestesiólogo <br>
+				Telefono: 315 927 46 63 <br>
+				Ciudad: Bucaramanga - Santander <br>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="label">
+				<h2>Tecera Referencia</h2>
+			</div>
+				<div class="content">
+				<h3>Jose Mora</h3>
+				Profesión: Ingeniero Electrónico <br>
+				Telefono: 323 520 22 04 <br>
+				Ciudad: Agustin Codazzi - Cesar <br>
+			</div>
+		</div>
+		<br>
 	</main>
-	<br><br>	
 
+	<article>
+		<h1>Ingeniero Electrónico de la universidad popular del cesar </h1>
+	</article>
+
+	<br>
+	<hr>
 	<footer>
 		Julio Elias Vasquez Rojas© <br>
 		Ingeniero Electrónico<br>
 		Universidad Popular del Cesar<br>
 		2023
 	</footer>
+	<script src="js/funciones.js" type="text/javascript"></script>
 </body>
 
 </html>
